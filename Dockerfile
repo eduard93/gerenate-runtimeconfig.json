@@ -21,6 +21,6 @@ FROM mcr.microsoft.com/dotnet/core/runtime:2.1
 WORKDIR /app
 COPY --from=build /app ./
 
-# RUN cp KafkaConsumer.runtimeconfig.json IRISGatewayCore21.runtimeconfig.json
+# RUN cp MyBusinessService.runtimeconfig.json IRISGatewayCore21.runtimeconfig.json
 
 CMD dotnet IRISGatewayCore21.dll 55555 127.0.0.1
